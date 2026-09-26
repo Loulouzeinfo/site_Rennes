@@ -253,7 +253,7 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   place-items: center;
   text-align: center;
   color: var(--white);
-  padding: 9rem 0 6rem;
+  padding: 9rem 0 9.5rem;
   background:
     linear-gradient(180deg, rgba(20, 20, 20, .55) 0%, rgba(20, 20, 20, .2) 40%, rgba(20, 20, 20, .95) 100%),
     var(--hero-img) center / cover no-repeat,
@@ -299,30 +299,76 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   gap: .8rem;
   justify-content: center;
 }
-/* Indicateur « faites defiler » : simple, sans animation ni souris dessinee */
-.hero__scroll {
+/* Rail d'images hero : defilement continu facon Netflix */
+.hero-marquee {
   position: absolute;
-  bottom: 1.8rem; left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  bottom: 1.2rem;
   z-index: 3;
-  color: rgba(255, 255, 255, .5);
-  font-size: .7rem;
-  font-weight: 700;
-  letter-spacing: .2em;
-  text-transform: uppercase;
   text-decoration: none;
-  transition: color .2s ease;
+  overflow: hidden;
+  padding: .55rem 0 .85rem;
+  color: var(--white);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
-.hero__scroll:hover { color: var(--white); }
-/* La petite souris devient un simple chevron */
-.hero__scroll i {
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin: 0 auto .55rem;
-  border-right: 1.5px solid currentColor;
-  border-bottom: 1.5px solid currentColor;
-  transform: rotate(45deg);
+.hero-marquee::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(20, 20, 20, .65));
+  pointer-events: none;
+  z-index: 1;
+}
+.hero-marquee__label {
+  position: absolute;
+  left: max(1.5rem, calc((100vw - var(--max)) / 2 + 1.5rem));
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: .45rem .85rem;
+  background: rgba(229, 9, 20, .96);
+  border-radius: 4px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .45);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.hero-marquee__track {
+  display: flex;
+  width: max-content;
+  gap: .75rem;
+  padding-left: max(11rem, calc((100vw - var(--max)) / 2 + 11rem));
+  animation: heroMarquee 34s linear infinite;
+}
+.hero-marquee:hover .hero-marquee__track { animation-play-state: paused; }
+.hero-marquee__item {
+  flex: 0 0 auto;
+  width: clamp(8rem, 16vw, 15rem);
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--black-3);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .45);
+  transform: translateZ(0);
+}
+.hero-marquee__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.12) contrast(1.04);
+  transition: transform .35s ease, filter .35s ease;
+}
+.hero-marquee:hover .hero-marquee__item img { filter: saturate(1.22) contrast(1.08); }
+.hero-marquee__item:hover img { transform: scale(1.08); }
+
+@keyframes heroMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - .375rem)); }
 }
 
 /* ---------- 5. Bandeau chiffres ---------- */
@@ -818,6 +864,7 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
+  .hero-marquee__track { animation: none; }
 }
 
 /* Bouton retour en haut : sobre, contour seul, aucun remplissage */
@@ -873,6 +920,15 @@ h3 { font-size: 1.15rem; font-weight: 700; }
     background: var(--red);
   }
   .nav__brand { font-size: 1.2rem; }
+  .hero-marquee__label {
+    left: 1rem;
+    font-size: .62rem;
+  }
+  .hero-marquee__track {
+    padding-left: 9.5rem;
+    animation-duration: 26s;
+  }
+  .hero-marquee__item { width: clamp(7.5rem, 32vw, 12rem); }
   .timeline { padding-left: 1.9rem; }
   .tl-item::before { left: -1.9rem; }
   .place { grid-column: span 1; }
@@ -888,7 +944,21 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 }
 
 @media (max-width: 520px) {
-  .hero { min-height: 80vh; padding: 7rem 0 5rem; }
+  .hero { min-height: 86vh; padding: 7rem 0 8.5rem; }
+  .hero-marquee {
+    bottom: .8rem;
+    padding-bottom: .55rem;
+  }
+  .hero-marquee__label {
+    top: .55rem;
+    transform: none;
+    min-height: 1.9rem;
+  }
+  .hero-marquee__track {
+    padding-top: 2.4rem;
+    padding-left: 1rem;
+  }
+  .hero-marquee__item { width: 8.8rem; }
   .stat { padding: .9rem .5rem; }
   .stat__label { font-size: .66rem; letter-spacing: .08em; }
   .place__body { padding: 1rem 1rem 1.1rem; }
