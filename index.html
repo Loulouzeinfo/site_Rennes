@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rennes, capitale de la Bretagne - Histoire et 5 lieux incontournables</title>
+  <meta name="description" content="Rennes, capitale de la Bretagne : decouvrez son histoire millenaire et les 5 meilleurs endroits a visiter, du centre historique aux quais de l'Ille.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23e50914'/%3E%3Ctext x='50' y='72' font-size='64' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3ER%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#top">
+        <span class="nav__mark" aria-hidden="true">R</span>
+        <span>Rennes</span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="nav-links" aria-label="Navigation principale">
+        <a class="nav__link" href="#histoire">Histoire</a>
+        <a class="nav__link" href="#lieux">5 lieux</a>
+        <a class="nav__link" href="#pratique">Pratique</a>
+        <a class="nav__link" href="#faq">Questions</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Chemin relatif au fichier CSS (assets/css/) car --hero-img est consomme par style.css -->
+  <section class="hero" id="accueil" style="--hero-img: url('../img/hero.jpg')">
+    <div class="container hero__content">
+      <span class="eyebrow">Capitale de la Bretagne</span>
+      <h1 class="hero__title">Rennes,<br><em>la ville qui ne s'arrete jamais</em></h1>
+      <p class="hero__tagline">
+        Fondee il y a plus de deux mille ans et vibrant de pres de 220 000 ames,
+        Rennes mele l'epaisseur du granit, la scene rock et une vie etudiante parmi
+        les plus festives de France.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#histoire">Remonter le temps</a>
+        <a class="btn btn--ghost" href="#lieux">Voir les 5 lieux</a>
+      </div>
+      <a class="hero__scroll" href="#histoire"><i aria-hidden="true"></i> Faites defiler</a>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Rennes en chiffres">
+    <div class="container stats__grid">
+      <div class="stat">
+        <div class="stat__value" data-count="306">0</div>
+        <div class="stat__label">Jours de fete par an</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value" data-count="220" data-suffix=" k">0</div>
+        <div class="stat__label">Habitants</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value" data-count="70" data-suffix=" %">0</div>
+        <div class="stat__label">Etudiants</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value" data-count="5">0</div>
+        <div class="stat__label">Lieu a decouvrir</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="histoire">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">La frise du temps</span>
+        <h2>Une histoire de vingt siecles</h2>
+        <p>
+          De l'oppidum gaulois de Condate a la metropole europeenne d'aujourd'hui,
+          Rennes a change de visage plus souvent qu'elle n'a change de nom. Quelques
+          dates pour comprendre comment s'est faconnee la ville aux sept tours.
+        </p>
+      </div>
+
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <span class="tl-date">Vers 50 av. J.-C.</span>
+          <h3>Condate, l'oppidum gaulois</h3>
+          <p>
+            Les Gaulois de la cite de Condate etablissent un vaste oppidum au confluent
+            de l'Ille et de la Vilaine. Ce lieu d'echange prefigure l'emplacement de la
+            future capitale bretonne.
+          </p>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-date">Vers 508</span>
+          <h3>Naissance de la Bretagne</h3>
+          <p>
+            Selon la tradition, la fondation de Rennes remontera a Clovis. Devenue
+            capitale de la Bretagne armoricaine des le VIe siecle, la ville s'affirme
+            comme un foyer religieux et intellectuel majeur.
+          </p>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-date">1351</span>
+          <h3>La Commune de Rennes</h3>
+          <p>
+            Les bourgeois obtiennent le droit d'elire leur municipalite et de porter
+            les armes. Cet acte fondateur donne naissance a la Commune, dont l'heritage
+            reste visible aujourd'hui place de la Mairie.
+          </p>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-date">1720</span>
+          <h3>L'incendie et le projet royal</h3>
+          <p>
+            Un vaste incendie detruit 945 maisons. Charles de Rohan, lord de la ville,
+            lance des 1723 un urbanisme d'exception : rues alignees, places monumentales
+            et hotels particuliers en granit qui dessinent encore le centre historique.
+          </p>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-date">1848</span>
+          <h3>Gare et industrialisation</h3>
+          <p>
+            La premiere ligne de chemin de fer de Bretagne dessert Rennes, qui attire
+            ouvriers et industriels. La ville s'etend alors au-dela de ses anciens
+            remparts, et l'architecture du XIXe siecle se multiplie.
+          </p>
+        </li>
+        <li class="tl-item reveal">
+          <span class="tl-date">1968 - aujourd'hui</span>
+          <h3>Une metropole universitaire et europeenne</h3>
+          <p>
+            Mai 68 y trouve un terreau fertile, et les decennies suivantes voient se
+            multiplier les facultees de sciences, la scene rock - notamment lors du
+            Trans Musical - et le quartier numerique. Rennes s'affirme aujourd'hui
+            comme la capitale economique et culturelle du Nord-Ouest de la France.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="quote" aria-label="Citation sur Rennes">
+    <div class="container quote__inner reveal">
+      <figure class="quote__media">
+        <img src="assets/img/quote-rennes.jpg" width="1800" height="2700" alt="Les Horizons a Rennes, immeubles contemporains dans une lumiere douce" loading="lazy">
+      </figure>
+      <div class="quote__content">
+        <span class="quote__eyebrow">Esprit rennais</span>
+        <blockquote>« Rennes n'est pas une ville, c'est un pays. »</blockquote>
+        <cite>Proverbe breton</cite>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="lieux">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Le best of</span>
+        <h2>Les 5 meilleurs endroits a visiter</h2>
+        <p>
+          Une selection qui conjugue patrimoine, nature et urbanisme vivant. Chaque
+          lieu est accessible gratuitement, en centre-ville ou a moins de vingt minutes
+          en transports ou a velo.
+        </p>
+      </div>
+
+      <div class="places">
+        <article class="place reveal">
+          <div class="place__media">
+            <img src="assets/img/parc.jpg" width="1600" height="1070" alt="Le parc du Thabor et l'eglise Saint-Melaine au bord de l'etang, a Rennes" loading="lazy">
+            <div class="place__rank" aria-hidden="true">1</div>
+            <span class="place__cat">Nature &amp; Detente</span>
+          </div>
+          <div class="place__body">
+            <h3>Le Parc du Thabor</h3>
+            <p>
+              Cree au XVIlIe siecle sur les anciennes douves de la ville, ce jardin
+              de 5 hectares mele balades, jardin botanique, enclos de betail et
+              plans d'eau. L'un des plus visites de Bretagne, il est gratuit, ombrage
+              et offre une vraie respiration au coeur de la metropole.
+            </p>
+            <div class="tags">
+              <span class="tag">Gratuit</span>
+              <span class="tag">5 hectares</span>
+              <span class="tag">Jardin botanique</span>
+            </div>
+            <ul class="place__facts">
+              <li><strong>Acces :</strong> 10 min a pied de la Republique</li>
+              <li><strong>Ideal :</strong> familles, balades, photo</li>
+              <li><strong>Astuce :</strong> entrez par la porte Compgne, cote sud</li>
+            </ul>
+            <a class="place__link" href="https://fr.wikipedia.org/wiki/Parc_du_Thabor" target="_blank" rel="noopener">En savoir plus</a>
+          </div>
+        </article>
+
+        <article class="place reveal">
+          <div class="place__media">
+            <img src="assets/img/viaduc.jpg" width="1600" height="1200" alt="Le viaduc de la Vilaine, ouvrage de fer a cheval de Norman Foster, vu depuis les berges" loading="lazy">
+            <div class="place__rank" aria-hidden="true">2</div>
+            <span class="place__cat">Patrimoine</span>
+          </div>
+          <div class="place__body">
+            <h3>Le Viaduc de la Vilaine</h3>
+            <p>
+              Edifie en 1857, cet ouvrage de fer a cheval de 460 metres, le plus long
+              de France a son ouverture, il traverse la Vilaine au sud de
+              la ville. Ses trois arches en plein cintre en font le monument
+              historique le plus photogenique de la capitale bretonne.
+            </p>
+            <div class="tags">
+              <span class="tag">Gratuit</span>
+              <span class="tag">460 metres</span>
+              <span class="tag">Monument historique</span>
+            </div>
+            <ul class="place__facts">
+              <li><strong>Acces :</strong> 20 min a pied de la gare</li>
+              <li><strong>Ideal :</strong>Architecture, couchers de soleil</li>
+              <li><strong>Astuce :</strong> photographie depuis la rive nord</li>
+            </ul>
+            <a class="place__link" href="https://fr.wikipedia.org/wiki/Viaduc_de_la_Vilaine_(Rennes)" target="_blank" rel="noopener">En savoir plus</a>
+          </div>
+        </article>
+
+        <article class="place reveal">
+          <div class="place__media">
+            <img src="assets/img/palais.jpg" width="1200" height="1600" alt="Le Palais Saint-Georges de Rennes, long batiment classique en pierre claire" loading="lazy">
+            <div class="place__rank" aria-hidden="true">3</div>
+            <span class="place__cat">Culture</span>
+          </div>
+          <div class="place__body">
+            <h3>Le Palais Saint-Georges</h3>
+            <p>
+              Construit au XIXe siecle sur les plans de l'architecte Arthur
+              Regnault, ce vaste ensemble classique abritait le college des
+              jesuites. Sa bibliotheque retrace sept siecles d'histoire medicale.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Gratuit</span>
+              <span class="tag">Bibliotheque</span>
+              <span class="tag">Patrimoine</span>
+            </div>
+            <ul class="place__facts">
+              <li><strong>Acces :</strong> 10 min a pied de la Republique</li>
+              <li><strong>Ideal :</strong> architecture, etudiants, Culture</li>
+              <li><strong>Astuce :</strong> la cour pavee vaut le detour</li>
+            </ul>
+            <a class="place__link" href="https://fr.wikipedia.org/wiki/Palais_Saint-Georges" target="_blank" rel="noopener">En savoir plus</a>
+          </div>
+        </article>
+
+
+        <article class="place reveal">
+          <div class="place__media">
+            <img src="assets/img/marche.jpg" width="1600" height="1200" alt="Les etals du marche des Lices, marche de producteurs sous la halle de Rennes" loading="lazy">
+            <div class="place__rank" aria-hidden="true">4</div>
+            <span class="place__cat">Gastronomie</span>
+          </div>
+          <div class="place__body">
+            <h3>Le marche des Lices</h3>
+            <p>
+              Cadre historique construit en 1869 sous la halle de metal de Victor
+              Baltard, le marche des Lices se tient chaque mardi, jeudi et samedi.
+              Fromagers, marechers, bouchers et fleuristes y reignent : c'est la
+              meilleure table de Bretagne a ciel ouvert.
+            </p>
+            <div class="tags">
+              <span class="tag">Gratuit</span>
+              <span class="tag">Produits locaux</span>
+            </div>
+            <ul class="place__facts">
+              <li><strong>Acces :</strong> bus C4, arret Lices</li>
+              <li><strong>Ideal :</strong> deguster, produits frais</li>
+              <li><strong>Astuce :</strong> arrivez avant 9h le samedi</li>
+            </ul>
+            <a class="place__link" href="https://fr.wikipedia.org/wiki/March%C3%A9_des_Lices" target="_blank" rel="noopener">En savoir plus</a>
+          </div>
+        </article>
+
+
+        <article class="place reveal">
+          <div class="place__media">
+            <img src="assets/img/cargo.jpg" width="1200" height="1600" alt="La facade vitree des Champs Libres, quartier numerique et culturel de Rennes" loading="lazy">
+            <div class="place__rank" aria-hidden="true">5</div>
+            <span class="place__cat">Moderne &amp; Culture</span>
+          </div>
+          <div class="place__body">
+            <h3>Les Champs Libres</h3>
+            <p>
+              Ancien quartier general militaire transforme en 2005, Les Champs Libres
+              abritent le musee des Arts, le Museum de Bretagne et la bibliotheque
+              centrale. Un immense ensemble de verre et d'acier, ideal pour une
+              journee culture et numerique.
+            </p>
+            <div class="tags">
+              <span class="tag">Gratuit</span>
+              <span class="tag">Musees</span>
+              <span class="tag">Bibliotheque</span>
+            </div>
+            <ul class="place__facts">
+              <li><strong>Acces :</strong> 12 min a pied de la Republique</li>
+              <li><strong>Ideal :</strong> musees, familles, architecture</li>
+              <li><strong>Astuce :</strong> la terrasse du cafe en hauteur</li>
+            </ul>
+            <a class="place__link" href="https://fr.wikipedia.org/wiki/Champs_Libres" target="_blank" rel="noopener">En savoir plus</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pratique">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Bon a savoir</span>
+        <h2>Pratique : bien visiter Rennes</h2>
+        <p>Quelques conseils pour profiter pleinement de la capitale bretonne.</p>
+      </div>
+
+      <div class="practical">
+        <div class="tip reveal">
+          <h3>Se deplacer</h3>
+          <p>
+            Le reseau STAR (metro, bus, tramway) couvre toute la ville. Comptez
+            environ 1,15 EUR le ticket unitaire. Le velo en libre-service est
+            l'ideal pour se promener dans les quartiers calmes.
+          </p>
+        </div>
+        <div class="tip reveal">
+          <h3>Quand venir</h3>
+          <p>
+            Le printemps et l'ete sont ideaux, mais Rennes a une vie animee
+            toute l'annee : festivals, marches et terrasses fonctionnent
+            12 mois sur 12.
+          </p>
+        </div>
+        <div class="tip reveal">
+          <h3>Trans Musical</h3>
+          <p>
+            Chaque annee au printemps, le festival rock de la Trans Musical
+            fait vibrer la ville pendant deux semaines. Reservez vos
+            billets a l'avance.
+          </p>
+        </div>
+        <div class="tip reveal">
+          <h3>Se logger</h3>
+          <p>
+            Le centre historique regorge d'hotels, de chambres d'hotes
+            et de locations meublies. Pour un sejour plus calme, le
+            quartier Gare est ideal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <div class="section-head reveal" style="text-align:center;margin-inline:auto">
+        <span class="eyebrow">Questions frequentes</span>
+        <h2>Vous vous demandiez...</h2>
+      </div>
+
+      <div class="faq">
+        <details class="reveal">
+          <summary>Quel est le meilleur moment pour visiter Rennes ?</summary>
+          <p>
+            Le printemps (mai-juin) et l'ete offrent le plus doux climat et
+            des jardins en fleurs. L'automne est ideal pour les couleurs du
+            parc du Thabor et l'ambiance des cafes.
+          </p>
+        </details>
+        <details class="reveal">
+          <summary>Les cinq lieux sont-ils payants ?</summary>
+          <p>
+            Non ! Les cinq lieux selectionnes sont gratuits. Seul le musee
+            des Beaux-Arts des Champs Libres peut avoir un tarif selon
+            l'exposition en cours.
+          </p>
+        </details>
+        <details class="reveal">
+          <summary>Rennes est-elle une ville student's ?</summary>
+          <p>
+            Oui, environ 70 % de la population est etudiante. Cela donne a
+            la ville une vie nocturne et culturelle tres animee, notamment
+            dans le quartier de la Gare et sur les quais de l'Ille.
+          </p>
+        </details>
+        <details class="reveal">
+          <summary>Combien de temps faut-il pour tout voir ?</summary>
+          <p>
+            Comptez deux journees : une pour le centre historique et les
+            cinq lieux, une seconde pour le parc du Thabor, les quais de
+            l'Ille et le quartier des Champs Libres.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__links">
+        <a href="#histoire">Histoire</a>
+        <a href="#lieux">5 lieux</a>
+        <a href="#pratique">Pratique</a>
+        <a href="#faq">Questions</a>
+      </div>
+      <p>
+        <strong>Rennes, capitale de la Bretagne</strong><br>
+        Realise en HTML, CSS et JavaScript purs - sans dependance externe.
+      </p>
+
+      <div class="footer__credits">
+        <h2 class="footer__credits-title">Credits photographiques</h2>
+        <p class="footer__credits-intro">
+          Les photographies proviennent de Wikimedia Commons et d'Unsplash,
+          selon les licences indiquees. Merci a leurs auteurs.
+        </p>
+        <ul class="footer__credits-list">
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Panoramic_view_on_the_illuminated_Rue_de_Rennes_and_%C3%89glise_Saint-Sulpice_at_sunset_France.jpg" target="_blank" rel="noopener">Banniere</a>
+            : Basile Morin, CC BY-SA 4.0
+          </li>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Rennes_-_Thabor_et_Saint-Melaine.jpg" target="_blank" rel="noopener">Parc du Thabor</a>
+            : Eusebius, CC BY 3.0
+          </li>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Rennes-viaduc-Norman-Foster-rocade-sud.jpg" target="_blank" rel="noopener">Viaduc de la Vilaine</a>
+            : Syced, CC0
+          </li>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Palais_Saint-Georges,_Rennes_01.jpg" target="_blank" rel="noopener">Palais Saint-Georges</a>
+            : John Samuel, CC BY-SA 4.0
+          </li>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:March%C3%A9_des_Lices.jpg" target="_blank" rel="noopener">Marche des Lices</a>
+            : ENoz, CC BY-SA 3.0
+          </li>
+          <li>
+            <a href="https://commons.wikimedia.org/wiki/File:Wikip%C3%A9dia_dans_Rennes_-_Les_Champs_Libres_-_vue_proche.jpg" target="_blank" rel="noopener">Les Champs Libres</a>
+            : Vale353, CC BY-SA 3.0
+          </li>
+          <li>
+            <a href="https://unsplash.com/photos/white-concrete-building-during-daytime--LUE2oft8EM" target="_blank" rel="noopener">Citation Rennes</a>
+            : Sebastien Chiron, Unsplash License
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Retour en haut de la page">&#8593;</button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

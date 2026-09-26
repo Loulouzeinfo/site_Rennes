@@ -1,0 +1,51 @@
+[
+  {
+    "slug": "hero",
+    "fichier": "Panoramic view on the illuminated Rue de Rennes and Église Saint-Sulpice at sunset France.jpg",
+    "auteur": "Basile Morin",
+    "licence": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Panoramic_view_on_the_illuminated_Rue_de_Rennes_and_%C3%89glise_Saint-Sulpice_at_sunset_France.jpg"
+  },
+  {
+    "slug": "parc",
+    "fichier": "Rennes - Thabor et Saint-Melaine.jpg",
+    "auteur": "Eusebius",
+    "licence": "CC BY 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rennes_-_Thabor_et_Saint-Melaine.jpg"
+  },
+  {
+    "slug": "viaduc",
+    "fichier": "Rennes-viaduc-Norman-Foster-rocade-sud.jpg",
+    "auteur": "Syced",
+    "licence": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rennes-viaduc-Norman-Foster-rocade-sud.jpg"
+  },
+  {
+    "slug": "palais",
+    "fichier": "Palais Saint-Georges, Rennes 01.jpg",
+    "auteur": "John Samuel",
+    "licence": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Palais_Saint-Georges,_Rennes_01.jpg"
+  },
+  {
+    "slug": "marche",
+    "fichier": "Marché des Lices.jpg",
+    "auteur": "ENoz",
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:March%C3%A9_des_Lices.jpg"
+  },
+  {
+    "slug": "cargo",
+    "fichier": "Wikipédia dans Rennes - Les Champs Libres - vue proche.jpg",
+    "auteur": "Vale353",
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Wikip%C3%A9dia_dans_Rennes_-_Les_Champs_Libres_-_vue_proche.jpg"
+  },
+  {
+    "slug": "quote-rennes",
+    "fichier": "quote-rennes.jpg",
+    "auteur": "Sebastien Chiron",
+    "licence": "Unsplash License",
+    "page": "https://unsplash.com/photos/white-concrete-building-during-daytime--LUE2oft8EM"
+  }
+]
