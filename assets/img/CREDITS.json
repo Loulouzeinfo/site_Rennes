@@ -1,51 +1,51 @@
 [
   {
     "slug": "hero",
-    "fichier": "Panoramic view on the illuminated Rue de Rennes and Église Saint-Sulpice at sunset France.jpg",
-    "auteur": "Basile Morin",
+    "fichier": "Rennes 20240829 Plaza.jpg",
+    "auteur": "Luistxo",
     "licence": "CC BY-SA 4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Panoramic_view_on_the_illuminated_Rue_de_Rennes_and_%C3%89glise_Saint-Sulpice_at_sunset_France.jpg"
-  },
-  {
-    "slug": "parc",
-    "fichier": "Rennes - Thabor et Saint-Melaine.jpg",
-    "auteur": "Eusebius",
-    "licence": "CC BY 3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Rennes_-_Thabor_et_Saint-Melaine.jpg"
-  },
-  {
-    "slug": "viaduc",
-    "fichier": "Rennes-viaduc-Norman-Foster-rocade-sud.jpg",
-    "auteur": "Syced",
-    "licence": "CC0",
-    "page": "https://commons.wikimedia.org/wiki/File:Rennes-viaduc-Norman-Foster-rocade-sud.jpg"
-  },
-  {
-    "slug": "palais",
-    "fichier": "Palais Saint-Georges, Rennes 01.jpg",
-    "auteur": "John Samuel",
-    "licence": "CC BY-SA 4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Palais_Saint-Georges,_Rennes_01.jpg"
-  },
-  {
-    "slug": "marche",
-    "fichier": "Marché des Lices.jpg",
-    "auteur": "ENoz",
-    "licence": "CC BY-SA 3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:March%C3%A9_des_Lices.jpg"
-  },
-  {
-    "slug": "cargo",
-    "fichier": "Wikipédia dans Rennes - Les Champs Libres - vue proche.jpg",
-    "auteur": "Vale353",
-    "licence": "CC BY-SA 3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Wikip%C3%A9dia_dans_Rennes_-_Les_Champs_Libres_-_vue_proche.jpg"
+    "page": "https://commons.wikimedia.org/wiki/File:Rennes_20240829_Plaza.jpg"
   },
   {
     "slug": "quote-rennes",
-    "fichier": "quote-rennes.jpg",
-    "auteur": "Sebastien Chiron",
-    "licence": "Unsplash License",
-    "page": "https://unsplash.com/photos/white-concrete-building-during-daytime--LUE2oft8EM"
+    "fichier": "Gare de Rennes - August 2024.jpg",
+    "auteur": "Lynx1211",
+    "licence": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gare_de_Rennes_-_August_2024.jpg"
+  },
+  {
+    "slug": "parc",
+    "fichier": "Rennes, Parc du Thabor - Fontaine et orangeraie.jpg",
+    "auteur": "Hoolen",
+    "licence": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rennes,_Parc_du_Thabor_-_Fontaine_et_orangeraie.jpg"
+  },
+  {
+    "slug": "viaduc",
+    "fichier": "Rennes - pont de Bretagne.jpg",
+    "auteur": "Fab5669",
+    "licence": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rennes_-_pont_de_Bretagne.jpg"
+  },
+  {
+    "slug": "palais",
+    "fichier": "Rennes - palais Saint-Georges 02.jpg",
+    "auteur": "Fab5669",
+    "licence": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rennes_-_palais_Saint-Georges_02.jpg"
+  },
+  {
+    "slug": "marche",
+    "fichier": "Creperie au Marche des Lices.jpg",
+    "auteur": "Laemito",
+    "licence": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Cr%C3%AAperie_au_March%C3%A9_des_Lices.jpg"
+  },
+  {
+    "slug": "cargo",
+    "fichier": "Rennes - cours des Allies 20230701-01.jpg",
+    "auteur": "Pymouss",
+    "licence": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rennes_-_cours_des_Alli%C3%A9s_20230701-01.jpg"
   }
 ]
