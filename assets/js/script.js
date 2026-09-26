@@ -81,6 +81,101 @@
   );
   onScroll();
 
+  /* ---------- Hero : carousel a points avec compte a rebours ---------- */
+  var heroDots = $$(".hero-dot");
+  var heroDotsWrap = $(".hero-dots");
+  var heroRoot = $(".hero");
+
+  if (heroRoot && heroDots.length) {
+    var heroImages = [
+      "/assets/img/hero.jpg",
+      "/assets/img/parc.jpg",
+      "/assets/img/palais.jpg",
+      "/assets/img/marche.jpg",
+      "/assets/img/cargo.jpg"
+    ];
+    var heroIndex = 0;
+    var heroTimer = null;
+    var heroTransitionTimer = null;
+    var heroDuration = 5000;
+    heroRoot.style.setProperty("--hero-slide-duration", heroDuration + "ms");
+
+    function setHeroSlide(index, restartTimer) {
+      var nextIndex = (index + heroImages.length) % heroImages.length;
+      var nextImage = heroImages[nextIndex];
+      var currentImage = heroImages[heroIndex];
+
+      if (nextIndex !== heroIndex) {
+        if (heroTransitionTimer) clearTimeout(heroTransitionTimer);
+        heroRoot.style.setProperty("--hero-img", "url('" + currentImage + "')");
+        heroRoot.style.setProperty("--hero-next-img", "url('" + nextImage + "')");
+        heroRoot.classList.add("is-transitioning");
+        heroTransitionTimer = setTimeout(function () {
+          heroRoot.style.setProperty("--hero-img", "url('" + nextImage + "')");
+          heroRoot.classList.remove("is-transitioning");
+        }, 720);
+      } else {
+        heroRoot.style.setProperty("--hero-img", "url('" + nextImage + "')");
+        heroRoot.classList.remove("is-transitioning");
+      }
+
+      heroIndex = nextIndex;
+
+      heroDots.forEach(function (dot, i) {
+        var active = i === heroIndex;
+        dot.classList.toggle("is-active", active);
+        dot.classList.remove("is-paused");
+        if (active) {
+          dot.setAttribute("aria-current", "true");
+          // Relance l'animation CSS de progression meme si on revient sur le meme point.
+          var progress = dot.querySelector("span");
+          if (progress) {
+            progress.style.animation = "none";
+            progress.offsetHeight;
+            progress.style.animation = "";
+          }
+        } else {
+          dot.removeAttribute("aria-current");
+        }
+      });
+
+      if (restartTimer !== false) startHeroTimer();
+    }
+
+    function startHeroTimer() {
+      if (heroTimer) clearTimeout(heroTimer);
+      if (document.hidden) return;
+      heroTimer = setTimeout(function () {
+        setHeroSlide(heroIndex + 1, true);
+      }, heroDuration + 80);
+    }
+
+    if (heroDotsWrap) {
+      heroDotsWrap.addEventListener("click", function (event) {
+        var dot = event.target.closest(".hero-dot");
+        if (!dot || !heroDotsWrap.contains(dot)) return;
+        setHeroSlide(parseInt(dot.dataset.slide, 10) || 0, true);
+      });
+
+      heroDotsWrap.addEventListener("animationend", function (event) {
+        if (!event.target.closest(".hero-dot.is-active")) return;
+        if (event.animationName !== "heroDotProgress") return;
+        setHeroSlide(heroIndex + 1, true);
+      });
+    }
+
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) {
+        if (heroTimer) clearTimeout(heroTimer);
+        heroDots.forEach(function (dot) { dot.classList.add("is-paused"); });
+      } else {
+        setHeroSlide(heroIndex, true);
+      }
+    });
+
+    setHeroSlide(0, true);
+  }
+
   /* ---------- Révélation au scroll ---------- */
   var revealables = $$(".reveal");
   if ("IntersectionObserver" in window) {

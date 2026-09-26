@@ -28,8 +28,11 @@
     </div>
   </header>
 
-  <!-- Chemin relatif au fichier CSS (assets/css/) car --hero-img est consomme par style.css -->
-  <section class="hero" id="accueil" style="--hero-img: url('../img/hero.jpg')">
+  <section class="hero" id="accueil" style="--hero-img: url('/assets/img/hero.jpg'); --hero-next-img: url('/assets/img/parc.jpg')">
+    <div class="hero-bg-slider" aria-hidden="true">
+      <span class="hero-bg-slider__slide hero-bg-slider__slide--current"></span>
+      <span class="hero-bg-slider__slide hero-bg-slider__slide--next"></span>
+    </div>
     <div class="container hero__content">
       <span class="eyebrow">Capitale de la Bretagne</span>
       <h1 class="hero__title">Rennes,<br><em>la ville qui ne s'arrete jamais</em></h1>
@@ -42,24 +45,14 @@
         <a class="btn btn--primary" href="#histoire">Remonter le temps</a>
         <a class="btn btn--ghost" href="#lieux">Voir les 5 lieux</a>
       </div>
+      <div class="hero-dots" role="tablist" aria-label="Images de Rennes">
+        <button class="hero-dot is-active" type="button" role="tab" aria-label="Afficher la place de Rennes" aria-current="true" data-slide="0"><span></span></button>
+        <button class="hero-dot" type="button" role="tab" aria-label="Afficher le parc du Thabor" data-slide="1"><span></span></button>
+        <button class="hero-dot" type="button" role="tab" aria-label="Afficher le Palais Saint-Georges" data-slide="2"><span></span></button>
+        <button class="hero-dot" type="button" role="tab" aria-label="Afficher le marche des Lices" data-slide="3"><span></span></button>
+        <button class="hero-dot" type="button" role="tab" aria-label="Afficher les Champs Libres" data-slide="4"><span></span></button>
+      </div>
     </div>
-    <a class="hero-marquee" href="#lieux" aria-label="Voir les photos de Rennes">
-      <span class="hero-marquee__label">Rennes en images</span>
-      <span class="hero-marquee__track" aria-hidden="true">
-        <span class="hero-marquee__item"><img src="assets/img/parc.jpg" alt=""></span>
-        <span class="hero-marquee__item"><img src="assets/img/palais.jpg" alt=""></span>
-        <span class="hero-marquee__item"><img src="assets/img/marche.jpg" alt=""></span>
-        <span class="hero-marquee__item"><img src="assets/img/viaduc.jpg" alt=""></span>
-        <span class="hero-marquee__item"><img src="assets/img/cargo.jpg" alt=""></span>
-        <span class="hero-marquee__item"><img src="assets/img/quote-rennes.jpg" alt=""></span>
-        <span class="hero-marquee__item"><img src="assets/img/parc.jpg" alt=""></span>
-        <span class="hero-marquee__item"><img src="assets/img/palais.jpg" alt=""></span>
-        <span class="hero-marquee__item"><img src="assets/img/marche.jpg" alt=""></span>
-        <span class="hero-marquee__item"><img src="assets/img/viaduc.jpg" alt=""></span>
-        <span class="hero-marquee__item"><img src="assets/img/cargo.jpg" alt=""></span>
-        <span class="hero-marquee__item"><img src="assets/img/quote-rennes.jpg" alt=""></span>
-      </span>
-    </a>
   </section>
 
   <section class="stats" aria-label="Rennes en chiffres">
@@ -469,6 +462,6 @@
 
   <button class="to-top" type="button" aria-label="Retour en haut de la page">&#8593;</button>
 
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js?v=hero-carousel-2"></script>
 </body>
 </html>
